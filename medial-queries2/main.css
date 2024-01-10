@@ -1,3 +1,75 @@
 body {
   background: papayawhip;
+  margin: 0;
+}
+
+.container{
+  display:flex;
+  height:100vh;
+  width:100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.a{
+  background-color: lime;
+  width:100%;
+}
+
+.b{
+  background-color:yellow;
+  width:100%;
+  height: 50%;
+}
+.c{
+  background-color: aquamarine;
+  height: 20vh;
+  width:30vw;
+
+}
+.d{
+  background-color: fuchsia;
+  height: 20vh;
+  width:30vw;
+}
+.e{
+  background-color: dodgerblue;
+  height: 20vh;
+  width:30vw;
+}
+.f{
+  background-color: lightsalmon;
+  width:100%;
+}
+
+.a, .f{
+  flex-grow:2;
+}
+
+@media (min-width:600px){
+
+  .container{
+    flex-direction: column;
+  }
+
+  .main{
+    min-height:50vh;
+    min-width:50vw;
+  }
+
+  .f{
+    margin:.5em;
+    min-height: 90vh;
+    flex-grow: 1;
+  }
+
 }
